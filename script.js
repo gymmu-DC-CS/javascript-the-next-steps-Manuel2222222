@@ -110,3 +110,20 @@ export function exercise07(args) {
   return false
 }
 
+export function exercise08(args) {
+  const input = args;
+  const result = [];
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i];
+
+    if (currentElement === "e") {
+      result.push(3)
+    } 
+    else {
+      result.push(currentElement);
+    }
+  }
+
+  return result.join("");
+}
