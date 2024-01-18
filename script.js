@@ -85,9 +85,9 @@ export function exercise06(args) {
     const specialCharacter = input[i].charCodeAt()
 
     if ((specialCharacter >= 33 && specialCharacter <= 47) ||
-      (specialCharacter >= 58 && specialCharacter <= 64) ||
-      (specialCharacter >= 91 && specialCharacter <= 96) ||
-      (specialCharacter >= 123 && specialCharacter <= 126)) {
+        (specialCharacter >= 58 && specialCharacter <= 64) ||
+        (specialCharacter >= 91 && specialCharacter <= 96) ||
+        (specialCharacter >= 123 && specialCharacter <= 126)) {
       return true
     }
 
@@ -101,10 +101,9 @@ export function exercise07(args) {
   for (let i = 1; i < input.length - 1; i++) {
     const currentElement = input[i].charCodeAt()
     const previousElement = input[i - 1].charCodeAt()
+    const nextElement = input[i + 1].charCodeAt()
 
-    if (
-      (currentElement === 110 && previousElement === 97)
-    ) {
+    if ((currentElement === 110 && previousElement === 97 && nextElement === 100)) {
       return true
     }
   }
